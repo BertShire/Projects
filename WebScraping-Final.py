@@ -61,7 +61,6 @@ while i < 5:
             Earned = Earnings.text
             print("Earnings:",Earned.replace(',',''))
             Style = page_soup.find("div",{"class":"field field--name-field-bowls field--type-list-string field--label-inline clearfix"})
-            #Style=driver.find_element_by_xpath('/html/body/div[1]/div/main/div/div[2]/div[2]/div/div/div[2]/article/div/div[2]/div[2]/div[2]/div[2]')
             if Style is None:
                 print("Style: Data Unavailable")
                 continue
